@@ -190,7 +190,7 @@ GAME
 	{
 		name = ContractSystem
 		scene = 7, 8, 5, 6
-		update = 6498.4711828694426
+		update = 6488.4711828692243
 		version = 1.4.1
 		WEIGHTS
 		{
@@ -1598,7 +1598,7 @@ GAME
 	{
 		name = ResearchAndDevelopment
 		scene = 7, 8, 5, 6
-		sci = 18.4319534
+		sci = 63.4319534
 		Tech
 		{
 			id = start
@@ -1675,15 +1675,6 @@ GAME
 			part = science.module
 			part = batteryPack
 			part = probeCoreSphere
-		}
-		Tech
-		{
-			id = advRocketry
-			state = Available
-			cost = 45
-			part = fuelTank
-			part = radialLiquidEngine1-2
-			part = liquidEngine3
 		}
 		Science
 		{
@@ -2213,7 +2204,7 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.4.1
-		UT = 6505.271182869591
+		UT = 6489.7911828692531
 		activeVessel = 0
 		mapViewFiltering = -1026
 		commNetUIModeTracking = Network

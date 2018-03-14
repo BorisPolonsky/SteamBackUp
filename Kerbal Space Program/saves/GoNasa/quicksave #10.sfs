@@ -11,7 +11,7 @@ GAME
 	scene = 5
 	editor = None
 	flag = Squad/Flags/NASA
-	launchID = 20
+	launchID = 17
 	defaultVABLaunchSite = LaunchPad
 	defaultSPHLaunchSite = Runway
 	modded = False
@@ -190,7 +190,7 @@ GAME
 	{
 		name = ContractSystem
 		scene = 7, 8, 5, 6
-		update = 6498.4711828694426
+		update = 5615.4016711467393
 		version = 1.4.1
 		WEIGHTS
 		{
@@ -235,7 +235,7 @@ GAME
 				prestige = 0
 				seed = 564696869
 				state = Offered
-				viewed = Read
+				viewed = Seen
 				agent = Goliath National Products
 				deadlineType = Floating
 				expiryType = Floating
@@ -279,7 +279,7 @@ GAME
 				prestige = 0
 				seed = 564696868
 				state = Offered
-				viewed = Read
+				viewed = Seen
 				agent = Rockomax Conglomerate
 				deadlineType = Floating
 				expiryType = Floating
@@ -323,7 +323,7 @@ GAME
 				prestige = 0
 				seed = 564696856
 				state = Offered
-				viewed = Read
+				viewed = Seen
 				agent = Zaltonic Electronics
 				deadlineType = Floating
 				expiryType = Floating
@@ -453,7 +453,7 @@ GAME
 				prestige = 0
 				seed = -2042973548
 				state = Offered
-				viewed = Read
+				viewed = Seen
 				agent = Zaltonic Electronics
 				deadlineType = Floating
 				expiryType = Floating
@@ -586,18 +586,17 @@ GAME
 				PARAM
 				{
 					name = KerbalTourParameter
-					state = Complete
+					state = Incomplete
 					disableOnStateChange = False
 					allowPartialFailure = True
-					values = 0,0,0,0,0
+					values = 12188,0,0,0,0
 					kerbalName = Jornie Kerman
 					kerbalGender = Male
 					PARAM
 					{
 						name = KerbalDestinationParameter
-						enabled = False
-						state = Complete
-						values = 0,0,0,0,0
+						state = Incomplete
+						values = 4062,0,0,0,0
 						targetBody = 1
 						targetType = Suborbit
 						kerbalName = Jornie Kerman
@@ -668,7 +667,7 @@ GAME
 				prestige = 1
 				seed = -373939652
 				state = Offered
-				viewed = Read
+				viewed = Seen
 				agent = Vac-Co Advanced Suction Systems
 				deadlineType = Floating
 				expiryType = Floating
@@ -1505,7 +1504,7 @@ GAME
 	{
 		name = Funding
 		scene = 7, 8, 5, 6
-		funds = 114970.32586709474
+		funds = 102309.26299134706
 	}
 	SCENARIO
 	{
@@ -1598,7 +1597,7 @@ GAME
 	{
 		name = ResearchAndDevelopment
 		scene = 7, 8, 5, 6
-		sci = 18.4319534
+		sci = 44.2864418
 		Tech
 		{
 			id = start
@@ -1676,15 +1675,6 @@ GAME
 			part = batteryPack
 			part = probeCoreSphere
 		}
-		Tech
-		{
-			id = advRocketry
-			state = Available
-			cost = 45
-			part = fuelTank
-			part = radialLiquidEngine1-2
-			part = liquidEngine3
-		}
 		Science
 		{
 			id = crewReport@KerbinSrfLandedLaunchPad
@@ -1728,11 +1718,11 @@ GAME
 		Science
 		{
 			id = recovery@KerbinFlew
-			title = Recovery of a vessel that survived a flight.
+			title = Recovery of a vessel returned from a flight over Kerbin
 			dsc = 1
-			scv = 0.000128587082
+			scv = 0.000771601975
 			sbv = 5
-			sci = 5.99922848
+			sci = 5.99537039
 			cap = 6
 		}
 		Science
@@ -1798,11 +1788,11 @@ GAME
 		Science
 		{
 			id = recovery@KerbinSubOrbited
-			title = Recovery of a vessel returned from a sub-orbital flight on Kerbin
+			title = Recovery of a vessel after a sub-orbital flight.
 			dsc = 1
-			scv = 2.14576721E-05
+			scv = 0.000128646687
 			sbv = 8
-			sci = 9.59979439
+			sci = 9.59876537
 			cap = 9.60000038
 		}
 		Science
@@ -1840,9 +1830,9 @@ GAME
 			id = mobileMaterialsLab@KerbinSrfLandedLaunchPad
 			title = Materials Study from LaunchPad
 			dsc = 1
-			scv = 0.0478515998
+			scv = 0.218749985
 			sbv = 0.300000012
-			sci = 9.140625
+			sci = 7.50000048
 			cap = 9.60000038
 		}
 		Science
@@ -1864,16 +1854,6 @@ GAME
 			sbv = 0.400000006
 			sci = 3.20000005
 			cap = 3.20000005
-		}
-		Science
-		{
-			id = mobileMaterialsLab@KerbinFlyingLow
-			title = Materials Study while flying at Kerbin
-			dsc = 1
-			scv = 0.218749985
-			sbv = 0.699999988
-			sci = 17.5
-			cap = 22.3999996
 		}
 		ExpParts
 		{
@@ -2213,7 +2193,7 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.4.1
-		UT = 6505.271182869591
+		UT = 5622.3216711468904
 		activeVessel = 0
 		mapViewFiltering = -1026
 		commNetUIModeTracking = Network
@@ -2310,20 +2290,16 @@ GAME
 			gExperienced = 0
 			outDueToG = False
 			ToD = 0
-			idx = 0
+			idx = -1
 			extraXP = 0
 			hero = False
 			CAREER_LOG
 			{
-				flight = 2
-				0 = Recover
-				1 = Flight,Kerbin
-				1 = Land,Kerbin
-				1 = Recover
+				flight = 0
 			}
 			FLIGHT_LOG
 			{
-				flight = 2
+				flight = 0
 			}
 		}
 		KERBAL
@@ -2360,6 +2336,35 @@ GAME
 			FLIGHT_LOG
 			{
 				flight = 3
+			}
+		}
+		KERBAL
+		{
+			name = Jornie Kerman
+			gender = Male
+			type = Tourist
+			trait = Tourist
+			brave = 0.32723859
+			dumb = 0.671061695
+			badS = True
+			veteran = False
+			tour = False
+			state = Available
+			inactive = False
+			inactiveTimeEnd = 0
+			gExperienced = 0
+			outDueToG = False
+			ToD = 0
+			idx = -1
+			extraXP = 0
+			hero = False
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
 			}
 		}
 		KERBAL
