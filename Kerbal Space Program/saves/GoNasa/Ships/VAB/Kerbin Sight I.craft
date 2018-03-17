@@ -1,6 +1,6 @@
-ship = BabySitter III
+ship = Kerbin Sight I
 version = 1.4.1
-description = Another Solution for Kerbin rescure mission, where at least a pilot is required.
+description = Orbital Sight Seeing for two tourists. 
 type = VAB
 size = 4.30572748,14.3586769,4.30572891
 persistentId = 1288730828
@@ -1841,7 +1841,7 @@ PART
 	part = solidBooster_4294731696
 	partName = Part
 	persistentId = 117130883
-	pos = 0.944959164,3.46729469,1.14481878
+	pos = 0.94495976,3.46729469,1.14481926
 	attPos = 0,0,0
 	attPos0 = -0.786700428,0.0529708862,0
 	rot = 0,-0.382683516,0,-0.923879623
@@ -1976,7 +1976,7 @@ PART
 	part = noseCone_4294731614
 	partName = Part
 	persistentId = 1230202335
-	pos = 0.944959164,4.74913216,1.14481878
+	pos = 0.94495976,4.74913216,1.14481926
 	attPos = 0,0,0
 	attPos0 = 4.47034765E-08,1.28183746,1.19209247E-07
 	rot = 0,1.00000012,0,-1.78813934E-07
@@ -2126,7 +2126,7 @@ PART
 	part = solidBooster_4294731484
 	partName = Part
 	persistentId = 1779123993
-	pos = 0.944953561,3.46729469,-0.838083923
+	pos = 0.944953918,3.46729469,-0.83808428
 	attPos = 0,0,0
 	attPos0 = -0.786700428,0.0529708862,0
 	rot = 0,-0.923879623,0,-0.382683486
@@ -2261,7 +2261,7 @@ PART
 	part = noseCone_4294731402
 	partName = Part
 	persistentId = 208168066
-	pos = 0.944953561,4.74913216,-0.838083923
+	pos = 0.944953918,4.74913216,-0.83808428
 	attPos = 0,0,0
 	attPos0 = 4.47034765E-08,1.28183746,1.19209247E-07
 	rot = 0,0.707106829,0,-0.707106948

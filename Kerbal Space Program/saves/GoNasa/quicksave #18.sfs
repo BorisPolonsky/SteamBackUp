@@ -11,7 +11,7 @@ GAME
 	scene = 5
 	editor = None
 	flag = Squad/Flags/NASA
-	launchID = 35
+	launchID = 34
 	defaultVABLaunchSite = LaunchPad
 	defaultSPHLaunchSite = Runway
 	modded = False
@@ -190,7 +190,7 @@ GAME
 	{
 		name = ContractSystem
 		scene = 7, 8, 5, 6
-		update = 39041.234184871217
+		update = 33147.860548185468
 		version = 1.4.1
 		WEIGHTS
 		{
@@ -198,7 +198,7 @@ GAME
 			SurveyContract = 24
 			StationContract = 30
 			SentinelContract = 30
-			SatelliteContract = 42
+			SatelliteContract = 30
 			ISRUContract = 30
 			ExplorationContract = 30
 			BaseContract = 30
@@ -545,68 +545,40 @@ GAME
 			}
 			CONTRACT
 			{
-				guid = 416da4eb-8604-42d9-8e2f-f1e669a8589d
-				type = SatelliteContract
+				guid = 5b63e88c-78ac-4952-9a91-0faf6a6db460
+				type = RecoverAsset
 				prestige = 0
-				seed = 579396495
+				seed = -1587119293
 				state = Active
 				viewed = Read
-				agent = WinterOwl Aircraft Emporium
+				agent = STEADLER Engineering Corps
 				deadlineType = Floating
 				expiryType = Floating
-				values = 84292.6849365234,44885854.7286987,31549.2948532104,84887.3176094261,35279.9983978271,4,13.12171,6.796117,123168.639121421,38912.1141848919,44924766.8428836,0
+				values = 108000,46008000,23168.3169007301,55577.2253644732,24569.9988842011,0,9.522859,9.900001,141099.520548193,33119.80054819,46041119.8005482,0
 				targetBody = 1
-				deviation = 7
-				orbitType = 6
-				placementMode = 0
+				kerbalName = Billy-Bobgel Kerman
+				partName = mk1pod
+				partID = 1150935802
+				recoveryLocation = 1
+				recoveryType = 1
 				PARAM
 				{
-					name = VesselSystemsParameter
+					name = AcquireCrew
 					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					typeString = probe
-					mannedStatus = 1
-					requireNew = True
-					checkModuleTypes = Antenna|Generator
-					checkModuleDescriptions = has an antenna|can generate power
-					launchID = 35
+					values = 5940,0,0,4,0
+					title = Save Billy-Bobgel Kerman
+					winOn = 0
+					kerbal = Billy-Bobgel Kerman
 				}
 				PARAM
 				{
-					name = SpecificOrbitParameter
+					name = RecoverKerbal
 					state = Incomplete
-					disableOnStateChange = False
 					values = 0,0,0,0,0
-					TargetBody = 1
-					deviationWindow = 7
-					orbitType = 6
-					inclination = 4.7599434177755464
-					eccentricity = 0.081379190509965393
-					sma = 8991032.0869175289
-					lan = 319.30032685366473
-					argumentOfPeriapsis = 193.02042835998364
-					meanAnomalyAtEpoch = 0.97854900365840503
-					epoch = 0
-				}
-				PARAM
-				{
-					name = PartRequestParameter
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					article = a
-					partDescription = thermometer
-					vesselDescription = satellite
-					partNames = sensorThermometer
-				}
-				PARAM
-				{
-					name = StabilityParameter
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					holdSeconds = 10
+					title = Recover Billy-Bobgel Kerman on Kerbin
+					failOn = All
+					winOn = All
+					kerbal = Billy-Bobgel Kerman
 				}
 			}
 			CONTRACT
@@ -1787,44 +1759,6 @@ GAME
 					winOn = All
 				}
 			}
-			CONTRACT_FINISHED
-			{
-				guid = 5b63e88c-78ac-4952-9a91-0faf6a6db460
-				type = RecoverAsset
-				prestige = 0
-				seed = -1587119293
-				state = Completed
-				viewed = Read
-				agent = STEADLER Engineering Corps
-				deadlineType = Floating
-				expiryType = Floating
-				values = 108000,46008000,23168.3169007301,55577.2253644732,24569.9988842011,0,9.522859,9.900001,141099.520548193,33119.80054819,46041119.8005482,38875.9541848977
-				targetBody = 1
-				kerbalName = Billy-Bobgel Kerman
-				partName = mk1pod
-				partID = 1150935802
-				recoveryLocation = 1
-				recoveryType = 1
-				PARAM
-				{
-					name = AcquireCrew
-					enabled = False
-					state = Complete
-					values = 0,0,0,0,0
-					title = Save Billy-Bobgel Kerman
-					winOn = 0
-				}
-				PARAM
-				{
-					name = RecoverKerbal
-					enabled = False
-					state = Complete
-					values = 0,0,0,0,0
-					title = Recover Billy-Bobgel Kerman on Kerbin
-					failOn = All
-					winOn = All
-				}
-			}
 		}
 	}
 	SCENARIO
@@ -1837,7 +1771,7 @@ GAME
 	{
 		name = Funding
 		scene = 7, 8, 5, 6
-		funds = 453404.35827537993
+		funds = 370947.65555494971
 	}
 	SCENARIO
 	{
@@ -1980,7 +1914,7 @@ GAME
 	{
 		name = ResearchAndDevelopment
 		scene = 7, 8, 5, 6
-		sci = 19.3179779
+		sci = 19.0401993
 		Tech
 		{
 			id = start
@@ -1992,7 +1926,6 @@ GAME
 			part = GooExperiment
 			part = trussPiece1x
 			part = parachuteSingle
-			part = kv1Pod
 		}
 		Tech
 		{
@@ -2067,8 +2000,6 @@ GAME
 			part = fuelTank
 			part = radialLiquidEngine1-2
 			part = liquidEngine3
-			part = Size1p5.Size1.Adapter.02
-			part = Size1p5.Tank.01
 		}
 		Tech
 		{
@@ -2090,7 +2021,6 @@ GAME
 			part = sasModule
 			part = winglet3
 			part = R8winglet
-			part = kv2Pod
 		}
 		Science
 		{
@@ -2367,9 +2297,9 @@ GAME
 			id = recovery@KerbinOrbited
 			title = Recovery of a vessel returned from orbit around Kerbin
 			dsc = 1
-			scv = 0.00462961197
+			scv = 0.0277777519
 			sbv = 10
-			sci = 11.9444447
+			sci = 11.666667
 			cap = 12
 		}
 		Science
@@ -2448,7 +2378,7 @@ GAME
 	{
 		name = Reputation
 		scene = 7, 8, 5, 6
-		rep = 240.642761
+		rep = 227.231842
 	}
 	SCENARIO
 	{
@@ -2780,7 +2710,7 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.4.1
-		UT = 39042.294184871047
+		UT = 33150.060548185116
 		activeVessel = 0
 		mapViewFiltering = -1026
 		commNetUIModeTracking = Network
@@ -2826,9 +2756,9 @@ GAME
 				ECC = 0.99999999999999989
 				INC = 0.089507770570238732
 				LPE = 90
-				LAN = 216.37274527359943
+				LAN = 118.58889761613523
 				MNA = -3.1415926207170166
-				EPH = 39001.074184877645
+				EPH = 33147.780548185481
 				REF = 1
 			}
 			PART
@@ -2859,7 +2789,6 @@ GAME
 				tempExtUnexp = 316.11972312409358
 				expt = 0.5
 				state = 1
-				PreFailState = 0
 				attached = False
 				autostrutMode = Off
 				rigidAttachment = False
@@ -3035,13 +2964,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 0
-				ECC = 1
-				INC = 0.089387743648794635
+				SMA = 300061.38667099306
+				ECC = 0.99999999999999989
+				INC = 0.089387743640639949
 				LPE = 90
-				LAN = 216.37270544416396
-				MNA = 0
-				EPH = 39001.074184877645
+				LAN = 118.58885778669975
+				MNA = 3.1415926207170166
+				EPH = 33147.780548185481
 				REF = 1
 			}
 			PART
@@ -3072,7 +3001,6 @@ GAME
 				tempExtUnexp = 315.91736371513059
 				expt = 0.5
 				state = 1
-				PreFailState = 0
 				attached = False
 				autostrutMode = Off
 				rigidAttachment = False
@@ -3220,41 +3148,38 @@ GAME
 			sit = ORBITING
 			landed = False
 			skipGroundPositioning = False
-			vesselSpawning = False
+			vesselSpawning = True
 			launchedFrom = 
 			landedAt = 
 			displaylandedAt = 
 			splashed = False
-			met = 5343.5418349763568
+			met = 33119.80054818996
 			lct = 33119.80054818996
-			lastUT = 38463.342383166317
-			distanceTraveled = 1897031.8988833427
+			lastUT = -1
+			distanceTraveled = 0
 			root = 0
-			lat = 0.00045298420707813369
-			lon = -70.907918819259194
-			alt = 79644.738314059796
+			lat = -3.6876871872590886E-05
+			lon = -12.459231370132304
+			alt = 82001.384887076798
 			hgt = -1
-			nrm = -0.742450953,-0.59631741,-0.305241108
-			rot = -0.313334942,-0.400079876,-0.861215055,-0.00813160371
+			nrm = 0,1,0
+			rot = 0.0194906518,0.734495223,0.6500085,0.193973809
 			CoM = 0,0,0
 			stg = 0
-			prst = False
+			prst = True
 			ref = 0
 			ctrl = False
 			PQSMin = 0
 			PQSMax = 0
-			cPch = 0.004000066
-			cHdg = -0.6859998
-			cMod = 0
 			ORBIT
 			{
-				SMA = 681944.60902551888
-				ECC = 0.0067318733949339781
-				INC = 0.0011603924046306362
-				LPE = 83.247299330107424
-				LAN = 278.67467353582418
-				MNA = -1.0841576026221778
-				EPH = 38450.182383168423
+				SMA = 681938.875
+				ECC = 0.0067348158918321133
+				INC = 3.6877027014270425E-05
+				LPE = 0.99948316812515259
+				LAN = 0.99913483858108521
+				MNA = 2.5531247434138358
+				EPH = 0.99943715333938599
 				REF = 1
 			}
 			PART
@@ -3270,263 +3195,30 @@ GAME
 				rotation = 0,0,0,1
 				mirror = 1,1,1
 				symMethod = Radial
-				istg = -1
+				istg = 0
 				resPri = 0
 				dstg = 0
 				sqor = 0
-				sepI = -1
+				sepI = 0
 				sidx = 0
 				attm = 0
-				srfN = , -1
+				srfN = None, -1
 				attN = bottom, -1
 				attN = top, -1
 				mass = 0.800000012
 				shielded = False
-				temp = 192.09265573634804
-				tempExt = 193.37575597737046
-				tempExtUnexp = 192.48382190574884
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
 				expt = 0.5
 				state = 0
-				PreFailState = 0
 				attached = True
 				autostrutMode = Off
 				rigidAttachment = False
 				flag = Squad/Agencies/SteadlerEngineeringCorps
-				rTrf = mk1pod (Billy-Bobgel's Derelict)
+				rTrf = 
 				modCost = 0
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-				}
-				PARTDATA
-				{
-				}
-				MODULE
-				{
-					name = ModuleCommand
-					isEnabled = True
-					hibernation = False
-					hibernateOnWarp = False
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-						MakeReferenceToggle
-						{
-							actionGroup = None
-							wasActiveBeforePartWasAdjusted = False
-						}
-						HibernateToggle
-						{
-							actionGroup = None
-							active = False
-							wasActiveBeforePartWasAdjusted = False
-						}
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleReactionWheel
-					isEnabled = True
-					actuatorModeCycle = 0
-					authorityLimiter = 100
-					stateString = Idle
-					stagingEnabled = True
-					WheelState = Active
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-						CycleAction
-						{
-							actionGroup = None
-							wasActiveBeforePartWasAdjusted = False
-						}
-						Activate
-						{
-							actionGroup = None
-							wasActiveBeforePartWasAdjusted = False
-						}
-						Deactivate
-						{
-							actionGroup = None
-							wasActiveBeforePartWasAdjusted = False
-						}
-						Toggle
-						{
-							actionGroup = None
-							wasActiveBeforePartWasAdjusted = False
-						}
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleColorChanger
-					isEnabled = True
-					animState = False
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-						ToggleAction
-						{
-							actionGroup = None
-							wasActiveBeforePartWasAdjusted = False
-						}
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleScienceExperiment
-					isEnabled = True
-					Deployed = False
-					Inoperable = False
-					cooldownToGo = 0
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-						DeployAction
-						{
-							actionGroup = None
-							wasActiveBeforePartWasAdjusted = False
-						}
-						ResetAction
-						{
-							actionGroup = None
-							wasActiveBeforePartWasAdjusted = False
-						}
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleScienceContainer
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-						CollectAllAction
-						{
-							actionGroup = None
-							wasActiveBeforePartWasAdjusted = False
-						}
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = FlagDecal
-					isEnabled = True
-					flagDisplayed = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleConductionMultiplier
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleDataTransmitter
-					isEnabled = True
-					xmitIncomplete = False
-					stagingEnabled = True
-					canComm = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-						StartTransmissionAction
-						{
-							actionGroup = None
-							active = False
-							wasActiveBeforePartWasAdjusted = False
-						}
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleLiftingSurface
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
-				MODULE
-				{
-					name = ModuleTripLogger
-					isEnabled = True
-					stagingEnabled = True
-					EVENTS
-					{
-					}
-					ACTIONS
-					{
-					}
-					Log
-					{
-						flight = 0
-					}
-					UPGRADESAPPLIED
-					{
-					}
-				}
+				crew = Billy-Bobgel Kerman
 				RESOURCE
 				{
 					name = ElectricCharge
@@ -3552,27 +3244,10 @@ GAME
 			}
 			ACTIONGROUPS
 			{
-				Stage = False, 0
-				Gear = False, 0
-				Light = False, 0
-				RCS = False, 0
-				SAS = False, 0
-				Brakes = False, 0
-				Abort = False, 0
-				Custom01 = False, 0
-				Custom02 = False, 0
-				Custom03 = False, 0
-				Custom04 = False, 0
-				Custom05 = False, 0
-				Custom06 = False, 0
-				Custom07 = False, 0
-				Custom08 = False, 0
-				Custom09 = False, 0
-				Custom10 = False, 0
 			}
 			DISCOVERY
 			{
-				state = -1
+				state = 29
 				lastObservedTime = 33119.80054818996
 				lifetime = 92016000
 				refTime = 92016000
@@ -3583,13 +3258,6 @@ GAME
 			}
 			CTRLSTATE
 			{
-				pitch = 0
-				yaw = 0
-				roll = 0
-				trimPitch = 0
-				trimYaw = 0
-				trimRoll = 0
-				mainThrottle = 0
 			}
 			VESSELMODULES
 			{
@@ -3598,8 +3266,8 @@ GAME
 				}
 				CommNetVessel
 				{
-					controlState = Kerbal
-					canComm = False
+					controlState = None
+					canComm = True
 				}
 			}
 		}
@@ -3628,7 +3296,6 @@ GAME
 			ToD = 0
 			idx = 0
 			extraXP = 0
-			suit = Default
 			hero = False
 			EVACHUTE
 			{
@@ -3716,7 +3383,6 @@ GAME
 			ToD = 0
 			idx = 0
 			extraXP = 0
-			suit = Default
 			hero = False
 			EVACHUTE
 			{
@@ -3791,7 +3457,6 @@ GAME
 			ToD = 0
 			idx = 0
 			extraXP = 0
-			suit = Default
 			hero = False
 			CAREER_LOG
 			{
@@ -3828,7 +3493,6 @@ GAME
 			ToD = 0
 			idx = 0
 			extraXP = 0
-			suit = Default
 			hero = False
 			CAREER_LOG
 			{
@@ -3865,7 +3529,6 @@ GAME
 			ToD = 0
 			idx = -1
 			extraXP = 0
-			suit = Default
 			hero = False
 			CAREER_LOG
 			{
@@ -3895,7 +3558,6 @@ GAME
 			ToD = 0
 			idx = -1
 			extraXP = 0
-			suit = Default
 			hero = False
 			CAREER_LOG
 			{
@@ -3925,7 +3587,6 @@ GAME
 			ToD = 0
 			idx = -1
 			extraXP = 0
-			suit = Default
 			hero = False
 			CAREER_LOG
 			{
@@ -3955,7 +3616,6 @@ GAME
 			ToD = 137193.9410133668
 			idx = -1
 			extraXP = 0
-			suit = Default
 			hero = False
 			CAREER_LOG
 			{
@@ -3985,7 +3645,6 @@ GAME
 			ToD = 238283.94574359141
 			idx = -1
 			extraXP = 0
-			suit = Default
 			hero = False
 			CAREER_LOG
 			{
@@ -4015,7 +3674,6 @@ GAME
 			ToD = 128127.50119403088
 			idx = -1
 			extraXP = 0
-			suit = Default
 			hero = False
 			CAREER_LOG
 			{
@@ -4045,7 +3703,6 @@ GAME
 			ToD = 211704.60538104258
 			idx = -1
 			extraXP = 0
-			suit = Default
 			hero = False
 			CAREER_LOG
 			{
@@ -4075,7 +3732,6 @@ GAME
 			ToD = 277156.53409198008
 			idx = -1
 			extraXP = 0
-			suit = Default
 			hero = False
 			CAREER_LOG
 			{
@@ -4105,7 +3761,6 @@ GAME
 			ToD = 235209.14029315196
 			idx = -1
 			extraXP = 0
-			suit = Default
 			hero = False
 			CAREER_LOG
 			{
@@ -4135,7 +3790,6 @@ GAME
 			ToD = 177715.98233416758
 			idx = -1
 			extraXP = 0
-			suit = Default
 			hero = False
 			CAREER_LOG
 			{
@@ -4165,7 +3819,6 @@ GAME
 			ToD = 195232.0757789918
 			idx = -1
 			extraXP = 0
-			suit = Default
 			hero = False
 			CAREER_LOG
 			{
@@ -4195,7 +3848,6 @@ GAME
 			ToD = 222845.54547503672
 			idx = -1
 			extraXP = 0
-			suit = Default
 			hero = False
 			CAREER_LOG
 			{
@@ -4225,7 +3877,6 @@ GAME
 			ToD = 0
 			idx = 0
 			extraXP = 0
-			suit = Default
 			hero = False
 			EVACHUTE
 			{
@@ -4287,14 +3938,14 @@ GAME
 		{
 			name = Billy-Bobgel Kerman
 			gender = Male
-			type = Crew
+			type = Unowned
 			trait = Engineer
 			brave = 0.904904127
 			dumb = 0.65839678
 			badS = True
 			veteran = False
 			tour = False
-			state = Available
+			state = Assigned
 			inactive = False
 			inactiveTimeEnd = 0
 			gExperienced = 0
@@ -4302,64 +3953,14 @@ GAME
 			ToD = 0
 			idx = 0
 			extraXP = 0
-			suit = Default
 			hero = False
-			EVACHUTE
-			{
-				name = ModuleEvaChute
-				isEnabled = True
-				chuteYawRateAtMaxSpeed = 1
-				chuteMaxSpeedForYawRate = 50
-				chuteYawRateAtMinSpeed = 1
-				chuteMinSpeedForYawRate = 1
-				chuteRollRate = 1
-				chutePitchRate = 1
-				chuteDefaultForwardPitch = 9
-				semiDeployedChuteForwardPitch = 25
-				chutePitchRateDivisorWhenTurning = 1
-				chuteRollRateDivisorWhenPitching = 1
-				chuteYawRateDivisorWhenPitching = 1
-				persistentState = STOWED
-				animTime = 0
-				minAirPressureToOpen = 0.0399999991
-				deployAltitude = 1000
-				spreadAngle = 7
-				automateSafeDeploy = 0
-				stagingEnabled = True
-				EVENTS
-				{
-				}
-				ACTIONS
-				{
-					DeployAction
-					{
-						actionGroup = None
-						wasActiveBeforePartWasAdjusted = False
-					}
-					CutAction
-					{
-						actionGroup = None
-						wasActiveBeforePartWasAdjusted = False
-					}
-				}
-				UPGRADESAPPLIED
-				{
-				}
-			}
 			CAREER_LOG
 			{
-				flight = 1
-				0 = ExitVessel,Kerbin
-				0 = Orbit,Kerbin
-				0 = BoardVessel,Kerbin
-				0 = Suborbit,Kerbin
-				0 = Flight,Kerbin
-				0 = Land,Kerbin
-				0 = Recover
+				flight = 0
 			}
 			FLIGHT_LOG
 			{
-				flight = 1
+				flight = 0
 			}
 		}
 	}
