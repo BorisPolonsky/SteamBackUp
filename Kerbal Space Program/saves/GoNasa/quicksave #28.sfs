@@ -190,7 +190,7 @@ GAME
 	{
 		name = ContractSystem
 		scene = 7, 8, 5, 6
-		update = 876432.40532104077
+		update = 876418.02532102738
 		version = 1.4.1
 		WEIGHTS
 		{
@@ -351,72 +351,6 @@ GAME
 			}
 			CONTRACT
 			{
-				guid = 8caa343e-c665-43a5-bfe6-c7eae909f1cb
-				type = SatelliteContract
-				prestige = 0
-				seed = 1232559182
-				state = Active
-				viewed = Read
-				agent = Zaltonic Electronics
-				deadlineType = Floating
-				expiryType = Floating
-				values = 129600,46008000,33935.9996795654,91309.0449912072,35632.7980453491,4,11.67464,6.666667,470007.963456893,340495.523847596,46348495.5238476,0
-				targetBody = 1
-				deviation = 7
-				orbitType = 3
-				placementMode = 0
-				PARAM
-				{
-					name = VesselSystemsParameter
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					typeString = probe
-					mannedStatus = 1
-					requireNew = True
-					checkModuleTypes = Antenna|Generator
-					checkModuleDescriptions = has an antenna|can generate power
-					launchID = 49
-				}
-				PARAM
-				{
-					name = SpecificOrbitParameter
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					TargetBody = 1
-					deviationWindow = 7
-					orbitType = 3
-					inclination = 0
-					eccentricity = 0.014081542562055896
-					sma = 5989214.3771653296
-					lan = 49.317569871570186
-					argumentOfPeriapsis = 51.251320699335466
-					meanAnomalyAtEpoch = -0.24903512863412977
-					epoch = 0
-				}
-				PARAM
-				{
-					name = PartRequestParameter
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					article = a
-					partDescription = thermometer
-					vesselDescription = satellite
-					partNames = sensorThermometer
-				}
-				PARAM
-				{
-					name = StabilityParameter
-					state = Incomplete
-					disableOnStateChange = False
-					values = 0,0,0,0,0
-					holdSeconds = 10
-				}
-			}
-			CONTRACT
-			{
 				guid = 1439dd5a-5c20-48a7-8364-2d6ac98269fe
 				type = SatelliteContract
 				prestige = 0
@@ -471,6 +405,72 @@ GAME
 					partDescription = materials bay
 					vesselDescription = satellite
 					partNames = science_module
+				}
+				PARAM
+				{
+					name = StabilityParameter
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					holdSeconds = 10
+				}
+			}
+			CONTRACT
+			{
+				guid = 8caa343e-c665-43a5-bfe6-c7eae909f1cb
+				type = SatelliteContract
+				prestige = 0
+				seed = 1232559182
+				state = Active
+				viewed = Read
+				agent = Zaltonic Electronics
+				deadlineType = Floating
+				expiryType = Floating
+				values = 129600,46008000,33935.9996795654,91309.0449912072,35632.7980453491,4,11.67464,6.666667,470007.963456893,340495.523847596,46348495.5238476,0
+				targetBody = 1
+				deviation = 7
+				orbitType = 3
+				placementMode = 0
+				PARAM
+				{
+					name = VesselSystemsParameter
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					typeString = probe
+					mannedStatus = 1
+					requireNew = True
+					checkModuleTypes = Antenna|Generator
+					checkModuleDescriptions = has an antenna|can generate power
+					launchID = 49
+				}
+				PARAM
+				{
+					name = SpecificOrbitParameter
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					TargetBody = 1
+					deviationWindow = 7
+					orbitType = 3
+					inclination = 0
+					eccentricity = 0.014081542562055896
+					sma = 5989214.3771653296
+					lan = 49.317569871570186
+					argumentOfPeriapsis = 51.251320699335466
+					meanAnomalyAtEpoch = -0.24903512863412977
+					epoch = 0
+				}
+				PARAM
+				{
+					name = PartRequestParameter
+					state = Incomplete
+					disableOnStateChange = False
+					values = 0,0,0,0,0
+					article = a
+					partDescription = thermometer
+					vesselDescription = satellite
+					partNames = sensorThermometer
 				}
 				PARAM
 				{
@@ -1062,7 +1062,7 @@ GAME
 				haul = False
 				dest = 0
 				sit = ORBITING
-				exp = False
+				exp = True
 				PARAM
 				{
 					name = PartTest
@@ -3189,7 +3189,7 @@ GAME
 	{
 		name = ResearchAndDevelopment
 		scene = 7, 8, 5, 6
-		sci = 36.7637329
+		sci = 126.763733
 		Tech
 		{
 			id = start
@@ -3377,34 +3377,6 @@ GAME
 			part = MassiveBooster
 			part = engineLargeSkipper
 			part = liquidEngine2-2
-		}
-		Tech
-		{
-			id = advConstruction
-			state = Available
-			cost = 90
-			part = Tube4
-			part = Tube3
-			part = Tube2
-			part = Tube1p5
-			part = Tube1
-			part = ServiceModule18
-			part = Size1to0ServiceModule
-			part = fairingSize1p5
-			part = Size1p5.Strut.Decoupler
-			part = Separator.1p5
-			part = EnginePlate4
-			part = EnginePlate3
-			part = EnginePlate2
-			part = EnginePlate1p5
-			part = stackTriCoupler
-			part = largeAdapter2
-			part = radialDecoupler2
-			part = radialDecoupler1-2
-			part = Separator.1
-			part = rocketNoseCone
-			part = fairingSize1
-			part = pointyNoseConeA
 		}
 		Science
 		{
@@ -4159,6 +4131,7 @@ GAME
 		ExpParts
 		{
 			microEngine = 1
+			radialDecoupler2 = 1
 		}
 	}
 	SCENARIO
@@ -4502,7 +4475,7 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.4.1
-		UT = 876433.58532104187
+		UT = 876427.30532103602
 		activeVessel = 0
 		mapViewFiltering = 15359
 		commNetUIModeTracking = Network
@@ -4548,9 +4521,9 @@ GAME
 				ECC = 1
 				INC = 80.033463098428641
 				LPE = 270
-				LAN = 160.24932279447307
+				LAN = 160.01009599556778
 				MNA = 0
-				EPH = 876432.3253210407
+				EPH = 876418.00532102736
 				REF = 1
 			}
 			PART
@@ -6025,13 +5998,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 301176.81153485551
-				ECC = 0.99999999999999989
+				SMA = NaN
+				ECC = 1
 				INC = 0.40301670485223484
 				LPE = 90
-				LAN = 90.19681278728234
-				MNA = 3.1415926207170166
-				EPH = 876432.3253210407
+				LAN = 89.957585988376991
+				MNA = 0
+				EPH = 876418.00532102736
 				REF = 1
 			}
 			PART
@@ -6202,9 +6175,9 @@ GAME
 				ECC = 1
 				INC = 87.532282049625451
 				LPE = 270
-				LAN = 325.35571290431426
+				LAN = 325.11648610540897
 				MNA = 0
-				EPH = 876432.3253210407
+				EPH = 876418.00532102736
 				REF = 1
 			}
 			PART
@@ -10223,11 +10196,11 @@ GAME
 			{
 				SMA = 300117.05645085353
 				ECC = 0.99999999999999989
-				INC = 0.023722155964073684
+				INC = 0.02372215594870979
 				LPE = 270
-				LAN = 275.244463240009
+				LAN = 275.00523644110365
 				MNA = 3.1415926207170166
-				EPH = 876432.3253210407
+				EPH = 876418.00532102736
 				REF = 1
 			}
 			PART
