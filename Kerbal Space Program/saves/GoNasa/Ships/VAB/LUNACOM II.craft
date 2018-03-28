@@ -2,7 +2,7 @@ ship = LUNACOM II
 version = 1.4.1
 description = 
 type = VAB
-size = 4.14654922,12.3194637,4.14655256
+size = 4.14654922,12.3194637,4.14655304
 persistentId = 1179171955
 rot = 0,0,0,0
 missionFlag = Squad/Flags/NASA
@@ -1374,7 +1374,7 @@ PART
 	part = launchClamp1_4293555522
 	partName = Part
 	persistentId = 3261447842
-	pos = -2.78410721,0.043097496,0.588095248
+	pos = -2.78410769,0.043097496,0.588095248
 	attPos = 0,0,0
 	attPos0 = -4.470348E-08,-0.949934006,1.34728754
 	rot = 0.00234842487,0.707102895,-0.00234842487,0.707102895
@@ -1594,7 +1594,7 @@ PART
 	part = solidBooster_4293564100
 	partName = Part
 	persistentId = 1523321851
-	pos = -0.0260424614,0.993031502,1.99887109
+	pos = -0.0260424614,0.993031502,1.99887133
 	attPos = 0,0,0
 	attPos0 = -0.786597371,-0.0687236786,-6.70552254E-08
 	rot = 1.77635684E-15,0,1.58818678E-22,1.00000012
@@ -1730,7 +1730,7 @@ PART
 	part = noseCone_4293563986
 	partName = Part
 	persistentId = 3150436399
-	pos = -0.0260424614,2.27486897,1.99887109
+	pos = -0.0260424614,2.27486897,1.99887133
 	attPos = 0,0,0
 	attPos0 = 2.7143954E-22,1.28183746,-4.5539998E-15
 	rot = 7.48678476E-23,0.707106888,1.49735695E-22,0.707106888
@@ -1769,7 +1769,7 @@ PART
 	part = launchClamp1_4293554016
 	partName = Part
 	persistentId = 2693449234
-	pos = -0.0260424614,0.043097496,3.34616375
+	pos = -0.0260424614,0.043097496,3.34616446
 	attPos = 0,0,0
 	attPos0 = -5.21539576E-08,-0.949934006,1.34728825
 	rot = 3.49245965E-10,0.999994636,-0.003321175,8.94069672E-08
@@ -2164,7 +2164,7 @@ PART
 	part = launchClamp1_4293553896
 	partName = Part
 	persistentId = 3110871257
-	pos = 2.73202276,0.043097496,0.588095248
+	pos = 2.73202324,0.043097496,0.588095248
 	attPos = 0,0,0
 	attPos0 = -2.85723334E-10,-0.949934006,1.34728801
 	rot = -0.0023484251,0.707102835,-0.0023484251,-0.707102954
@@ -2384,7 +2384,7 @@ PART
 	part = solidBooster_4293563676
 	partName = Part
 	persistentId = 2439873028
-	pos = -0.0260424167,0.993031502,-0.822680295
+	pos = -0.0260424167,0.993031502,-0.822680533
 	attPos = 0,0,0
 	attPos0 = -0.786597371,-0.0687236786,-6.70552254E-08
 	rot = 1.58818678E-22,1.00000012,-1.77635684E-15,0
@@ -2520,7 +2520,7 @@ PART
 	part = noseCone_4293563562
 	partName = Part
 	persistentId = 3436773640
-	pos = -0.0260424167,2.27486897,-0.822680295
+	pos = -0.0260424167,2.27486897,-0.822680533
 	attPos = 0,0,0
 	attPos0 = 2.7143954E-22,1.28183746,-4.5539998E-15
 	rot = 1.49735695E-22,0.707106888,-7.48678476E-23,-0.707106888
@@ -2559,7 +2559,7 @@ PART
 	part = launchClamp1_4293553776
 	partName = Part
 	persistentId = 518752628
-	pos = -0.0260421783,0.043097496,-2.1699717
+	pos = -0.0260421783,0.043097496,-2.16997242
 	attPos = 0,0,0
 	attPos0 = -5.21539576E-08,-0.949934006,1.34728825
 	rot = -0.003321175,8.94069672E-08,-3.49245965E-10,-0.999994636
@@ -3024,7 +3024,7 @@ PART
 		launchUT = -1
 		currentRotation = (-0.5, -0.5, -0.5, 0.5)
 		storedAnimationTime = 0
-		storedAnimationSpeed = -10
+		storedAnimationSpeed = 1
 		deployState = RETRACTED
 		stagingEnabled = True
 		EVENTS
@@ -3101,7 +3101,7 @@ PART
 		launchUT = -1
 		currentRotation = (-0.5, -0.5, -0.5, 0.5)
 		storedAnimationTime = 0
-		storedAnimationSpeed = -10
+		storedAnimationSpeed = 1
 		deployState = RETRACTED
 		stagingEnabled = True
 		EVENTS
@@ -3178,7 +3178,7 @@ PART
 		launchUT = -1
 		currentRotation = (-0.5, -0.5, -0.5, 0.5)
 		storedAnimationTime = 0
-		storedAnimationSpeed = -10
+		storedAnimationSpeed = 1
 		deployState = RETRACTED
 		stagingEnabled = True
 		EVENTS
@@ -3255,7 +3255,7 @@ PART
 		launchUT = -1
 		currentRotation = (-0.5, -0.5, -0.5, 0.5)
 		storedAnimationTime = 0
-		storedAnimationSpeed = -10
+		storedAnimationSpeed = 1
 		deployState = RETRACTED
 		stagingEnabled = True
 		EVENTS
